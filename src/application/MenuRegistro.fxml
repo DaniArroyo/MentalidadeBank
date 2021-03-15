@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="800.0" maxWidth="1400.0" minHeight="800.0" minWidth="1400.0" prefHeight="800.0" prefWidth="1400.0" style="-fx-background-color: #6e979b;" xmlns="http://javafx.com/javafx/15.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.Register">
+   <bottom>
+      <AnchorPane maxHeight="800.0" maxWidth="1400.0" minHeight="800.0" minWidth="1400.0" prefHeight="800.0" prefWidth="1400.0" style="-fx-background-color: #6e979b;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="800.0" fitWidth="1409.0">
+               <image>
+                  <Image url="@../../img/skylines.jpg" />
+               </image>
+            </ImageView>
+            <TextField fx:id="loginUsername" layoutX="384.0" layoutY="474.0" prefHeight="49.0" prefWidth="317.0" promptText="Usuario" style="-fx-text-inner-color: #2F7FEB">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </TextField>
+            <PasswordField fx:id="loginPassword" layoutX="384.0" layoutY="532.0" prefHeight="49.0" prefWidth="317.0" promptText="Password">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </PasswordField>
+            <Button fx:id="btnRegistro" layoutX="629.0" layoutY="617.0" mnemonicParsing="false" onAction="#verificarRegistro" prefHeight="38.0" prefWidth="195.0" text="Registrarse">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Button>
+            <Button fx:id="alreadyHaveAccount" layoutX="674.0" layoutY="671.0" mnemonicParsing="false" onAction="#alreadyHaveAccount" style="-fx-background-color: #6e979b;" text="Iniciar Sesión" textAlignment="CENTER" textFill="#afafaf" underline="true">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="34.0" fitWidth="33.0" layoutX="345.0" layoutY="482.0">
+               <image>
+                  <Image url="@../../img/icons/usuario.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="33.0" fitWidth="32.0" layoutX="345.0" layoutY="540.0">
+               <image>
+                  <Image url="@../../img/icons/contrasena.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="376.0" fitWidth="467.0" layoutX="467.0" layoutY="53.0" opacity="0.7">
+               <image>
+                  <Image url="@../../img/logos/logoTiburao%20copia.png" />
+               </image>
+            </ImageView>
+            <TextField fx:id="loginName" layoutX="725.0" layoutY="475.0" prefHeight="49.0" prefWidth="317.0" promptText="Nombre" style="-fx-text-inner-color: #2F7FEB">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="loginLastName" layoutX="725.0" layoutY="532.0" prefHeight="49.0" prefWidth="317.0" promptText="Apellidos" style="-fx-text-inner-color: #2F7FEB">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </TextField>
+         </children>
+      </AnchorPane>
+   </bottom>
+</BorderPane>
